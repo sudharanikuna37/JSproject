@@ -1,0 +1,118 @@
+
+   body{
+        background-color:black;
+        color: white;
+    } 
+    .socialmedia{
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    .insta{
+        color: palevioletred;
+        font-size: 40px;
+    }
+    .insta:hover{
+        color: white;
+    }
+    .facebook:hover{
+        color: white;
+    }
+    .twitter:hover{
+        color: white;
+    }
+    .facebook,.twitter{
+        color: rgb(115, 115, 239);
+        font-size: 40px;
+    }
+    .footer{
+        margin: 2%;
+        
+    }
+    .footer span{
+        color: red;
+    }
+    .send_msg input{
+        margin-left: 30%;
+        height: 35px;
+        text-align: center;
+        width: 40%;
+    }
+    .send_msg button{
+        width: 20%;
+        margin-left:40%;
+        text-align: center;
+        height: 40px;
+        background-color: red;
+        font-size: 20px;
+        font-weight: bolder;
+        border-radius: 20px;
+        border: 1px solid red;
+        box-shadow: 10px 10px 30px red;
+    }
+   .location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+   }
+   @media screen and (max-width: 768px) {
+    
+
+    .insta, .facebook, .twitter {
+        font-size: 30px; /* Reduce icon size */
+    }
+
+    .send_msg input {
+        margin-left: 10%; /* Center align inputs */
+        width: 80%;
+    }
+
+    .send_msg button {
+        margin-left: 30%;
+        width: 40%;
+    }
+
+    .footer {
+        margin: 5%;
+        text-align: center; /* Center align footer text */
+    }
+
+    .location {
+        flex-direction: column; /* Stack location details vertically */
+        gap: 15px;
+    }
+}
+
+/* For phones and smaller devices (width <= 480px) */
+@media screen and (max-width: 480px) {
+    
+    .insta, .facebook, .twitter {
+        font-size: 25px; /* Further reduce icon size */
+    }
+
+    .send_msg input {
+        width: 90%;
+        margin-left: 5%; /* Center inputs */
+    }
+
+    .send_msg button {
+        width: 50%;
+        margin-left: 25%; /* Center the button */
+        font-size: 18px; /* Adjust button font size */
+    }
+
+    .footer {
+        margin: 10%;
+        font-size: 14px; /* Smaller footer text */
+    }
+
+    .location {
+        flex-direction: column; /* Stack elements */
+        gap: 20px; /* Increase spacing */
+    }
+    .location .map{
+      width: 300px;
+    }
+}

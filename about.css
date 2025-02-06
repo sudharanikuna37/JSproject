@@ -1,0 +1,42 @@
+body{
+    background-color:black;
+    color: white;
+
+}  
+.socialmedia{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.insta{
+    color: palevioletred;
+    font-size: 40px;
+}
+.insta:hover{
+    color: white;
+}
+.facebook:hover{
+    color: white;
+}
+.twitter:hover{
+    color: white;
+}
+.facebook,.twitter{
+    color: rgb(115, 115, 239);
+    font-size: 40px;
+}
+.footer{
+    margin-top: 5%;
+}
+.footer span{
+    color: red;
+}
+
+@media screen and (max-width: 480px) {
+
+.about img{
+  width: 80%;
+}
+
+}
